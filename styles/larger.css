@@ -1,4 +1,4 @@
-@media only screen and (min-width:38rem) {
+@media only screen and (min-width: 38rem) {
 
     :root {
         --primary-color: #3d515a; ; 
@@ -18,6 +18,7 @@
         max-width: 900px;
         margin: 0 auto;
         padding: 10px;
+        
     }
 
     .navigation {
@@ -41,6 +42,7 @@
         font-weight: 500;
         font-size: 1.6rem;
         color: var(--tertiary-color);
+        
     }
     
     header img {
@@ -48,6 +50,7 @@
         width: 100%;
         height: auto;
         padding: 0 0 2px 0;
+        
     }
     
     /******************** MAIN ********************/
@@ -59,13 +62,12 @@
     }
 
     .student {
-        display: grid;
+        display: grid !important;
         grid-template-columns: 2fr 1fr;
         column-gap: 15px;
         margin-bottom: 10px;
         margin-right: 0;
-        
-    }
+    }    
 
     .certificates {
         margin-right: 0;
