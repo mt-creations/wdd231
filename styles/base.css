@@ -147,7 +147,9 @@ h1 {
     margin: 13px 0;
 }
 
-h2 {
+.about-me h2,
+.student-photo h2,
+.certificates h2 {
     display: flex;
     background-color: var(--primary-color);
     color: var(--tertiary-color);
