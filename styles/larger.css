@@ -1,0 +1,60 @@
+@media only screen and (min-width:38rem) {
+
+    :root {
+        --primary-color: #3d515a; ; 
+        --secondary-color: #83A0A0; 
+        --tertiary-color: #d5eeee;
+    }
+
+    
+    /******************** HEADER/NAV ********************/
+
+
+    .hamburger {
+        display: none;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .navigation {
+        display: block;
+        background-color: var(--tertiary-color);
+        padding: 0 10px;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 25px;
+        justify-content: flex-start;
+    }
+
+    .navigation a {
+        border: none;
+        padding: 10px 0;
+    }
+
+    header span {
+        font-weight: 500;
+        font-size: 1.6rem;
+        color: var(--tertiary-color);
+    }
+    
+    header img {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 0 0 2px 0;
+    }
+    
+    /******************** MAIN ********************/
+
+    main h1 {
+        margin-left: 0;
+    }
+
+
+}
