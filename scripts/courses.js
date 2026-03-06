@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("btn-all").addEventListener("click", () => showCourses('all'));
+    document.getElementById("btn-cse").addEventListener("click", () => showCourses('courses-cse'));
+    document.getElementById("btn-wdd").addEventListener("click", () => showCourses('courses-wdd'));
+
+});
 
 
 function showCourses(group) {
