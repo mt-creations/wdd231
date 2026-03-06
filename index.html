@@ -15,12 +15,14 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
 </head>
 <body>
     <header class="container">
         <img src="images/logo.svg" alt="site logo" height="1" width="1">
         <span>Michael Thomas</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <button id="ham-btn" class="hamburger" aria-label="navigation menu button"></button>
     </header>
 
     <nav id="nav-bar" class="navigation container">
@@ -31,7 +33,7 @@
         </ul>
     </nav>
     
-    <main class="container">
+    <main class="">
         <h1>Home</h1>
         <section class="student">
             <div class="about-me">
@@ -47,9 +49,9 @@
             <h3>Web Certificate Courses</h3>
 
             <div class="btn-group">
-                <button class="cert-btn" onclick="showCourses('all')">ALL</button>
-                <button class="cert-btn" onclick="showCourses('courses-cse')">CSE</button>
-                <button class="cert-btn" onclick="showCourses('courses-wdd')">WDD</button>
+                <button class="cert-btn" onclick="showCourses('all')" aria-label="show all courses">ALL</button>
+                <button class="cert-btn" onclick="showCourses('courses-cse')" aria-label="show cse courses">CSE</button>
+                <button class="cert-btn" onclick="showCourses('courses-wdd')" aria-label="show wdd courses">WDD</button>
             </div>
 
             <div class="courses-cse">
