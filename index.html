@@ -23,7 +23,6 @@
         <button id="ham-btn" class="hamburger"></button>
     </header>
 
-    
     <nav id="nav-bar" class="navigation container">
         <ul>
             <li class="current"><a href="#">Home</a></li>
@@ -34,13 +33,45 @@
     
     <main class="container">
         <h1>Home</h1>
+        <section class="student">
+            <div class="about-me">
+                <h3>About Me</h3>
+                <p>My name is Michael Thomas and I was born in Anaheim California. I have spent most of my life in southern California but did live in Venezuela for a couple years when I was 19 years old serving as a missionary. I currently run a window cleaning company and am working on a bachelor's degree in software development. Most of my free time is spent with my two amazing kids.</p>
+            </div>
+            <div class="student-photo">
+                <h3>Student Photo</h3>
+                <img class="profile-pic" src="images/profilepic.webp" alt="profile picture of Michael Thomas" width="200px">
+            </div>
+        </section>
+        <section class="certificates">
+            <h3>Web Certificate Courses</h3>
+
+            <div class="btn-group">
+                <button class="cert-btn" onclick="showCourses('all')">ALL</button>
+                <button class="cert-btn" onclick="showCourses('courses-cse')">CSE</button>
+                <button class="cert-btn" onclick="showCourses('courses-wdd')">WDD</button>
+            </div>
+
+            <div class="courses-cse">
+                <p data-credits="2">CSE 110</p>
+                <p data-credits="2">CSE 111</p>
+                <p data-credits="2">CSE 210</p>
+            </div>
+            <div class="courses-wdd">
+                <p data-credits="2">WDD 130</p>
+                <p data-credits="2">WDD 131</p>
+                <p data-credits="2">WDD 231</p>
+            </div>
+            <p id="total-credits" class="total-credits"></p>
+
+        </section>
     </main>
     <footer class="container">
         <div class="social">
             <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.svg" alt="facebook" width="16" height="16"></a>
             <a href="https://github.com/mt-creations/wdd231" target="_blank"><img src="images/github-icon.svg" alt="github" width="16" height="16"></a>
             <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin-icon.svg" alt="linkedin" width="16" height="16"></a>
-            <a href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" target="_blank"><img src="images/ms-teams.svg" alt="ms teams" width="30" height="30"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.svg" alt="instagram" width="16" height="16"></a>
         </div>
         <p>
             <span id="currentYear"></span>

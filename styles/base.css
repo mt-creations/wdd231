@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #3d515a; 
-    --secondary-color: #83A0A0; 
+    --secondary-color: #a7c7c7; 
     --tertiary-color: #d5eeee;
 }
 
@@ -27,6 +27,12 @@
   .ibm-plex-serif-bold {
     font-family: "IBM Plex Serif", serif;
     font-weight: 700;
+    font-style: normal;
+  }
+
+  .ibm-plex-serif-bold {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 900;
     font-style: normal;
   }
   
@@ -97,7 +103,6 @@ nav a:hover {
 
 }
 
-
 .navigation {
     display: none;
     
@@ -138,7 +143,90 @@ main {
     color: var(--primary-color);
 }
 
+h3 {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    text-align: center;
+    justify-items: center;
+    font-weight: 600;
+    padding: 3px 0;
+}
 
+.profile-pic {
+    border-radius: 6px;
+}
+
+.student {
+    display: block;
+    padding-right: 10px;
+}
+
+.student-photo {
+    padding-bottom: 18px;
+}
+
+.student-photo img {
+    display: block;
+    margin: 0 auto;
+}
+
+.about-me, .student-photo {
+    background-color: var(--tertiary-color);
+}
+
+.about-me p {
+    padding-bottom: 10px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.certificates {
+    padding: 0 10px 15px 0;
+
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+      
+}
+
+.cert-btn {
+    flex: 1;
+    height: 44px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    background-color: var(--tertiary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+}
+
+.cert-btn:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.courses-wdd p, .courses-cse p {
+    display: block;
+    text-align: center;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 3px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 2px; 
+}
+
+.courses-wdd, .courses-cse {
+    display: none;
+}
+
+.total-credits {
+    color: var(--primary-color);
+    text-align: center;
+}
 
 
 
@@ -148,10 +236,33 @@ main {
 footer {
     background-color: var(--tertiary-color);
     color: var(--primary-color);
+    font-weight: 600;
     padding: 10px 0;
     text-align: center;
 }
 
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
 
+.social a {
+    display: flex;
+    width: 44px;
+    height: 44PX;
+    justify-content: center;
+    align-items: center;
+    border: var(--secondary-color) solid 1px ;
+    border-radius: 22px;
+}
 
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: var(--secondary-color);
+}
 
