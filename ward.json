@@ -1,0 +1,30 @@
+
+{
+    
+    "family_name": "Thomas",
+    "move_in_date": "1999-01-01",
+    "number_of_people": 4,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "James Thomas",
+            "gender": "male",
+            "birthdate": "1961-12-07"
+        },
+        {
+            "name": "Diana Thomas",
+            "gender": "female",
+            "birthday": "1961-06-19"
+        },
+        {
+            "name": "Tiffany Thomas",
+            "gender": "female",
+            "birthday": "1981-01-29"
+        },
+        {
+            "name": "Michael Thomas",
+            "gender": "male",
+            "birthday": "1984-12-20"
+        }
+    ]
+}
