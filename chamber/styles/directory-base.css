@@ -1,0 +1,111 @@
+/****************** ROOT ******************/
+
+:root {
+    --primary-color: #3d515a; 
+    --secondary-color: #a7c7c7; 
+    --tertiary-color: #d8f3f3;
+}
+
+* {
+    font-family: "IBM Plex Serif", serif; 
+}
+
+/****************** FONT ******************/
+
+.ibm-plex-serif-regular {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.ibm-plex-serif-semibold {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+.ibm-plex-serif-bold {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ibm-plex-serif-super-bold {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+  
+.ibm-plex-serif-regular-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+/***************** HEADER *****************/
+
+
+
+
+/*************** NAVIGATION ***************/
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--tertiary-color);
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00d7";
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.navigation li.current a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--secondary-color);
+
+}
+
+.navigation {
+    display: none;
+    
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation li.current a{
+    font-weight: 900 ;
+    background-color: var(--tertiary-color);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navigation a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: solid 1px var(--tertiary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
