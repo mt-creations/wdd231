@@ -195,6 +195,56 @@ h1 {
     background-color: var(--secondary-color);
 }
 
-.list-btn :hover {
-    
+
+    /******** CARDS *********/
+
+
+
+
+
+
+
+/*************** FOOTER ***************/
+
+footer {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 600;
+    padding: 2px 10px 10px 10px ;
 }
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    margin: 16px 0;
+}
+
+.social a img{
+    width: 44px;
+    height: 44px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+
+.social a :hover {
+    background-color: var(--secondary-color);
+}
+
+.chamber-info {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.chamber-info p {
+    margin: 8px 0;
+}
+
+.student-info p {
+    margin: 8px 0;
+}
+
+.student-info {
+    border-top: 1px solid var(--secondary-color);
+}
+
