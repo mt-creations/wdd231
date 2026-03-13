@@ -10,8 +10,8 @@
 
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory-base.css">
-    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
 
     <meta property="og:title" content="Chamber of Commerce Page">
     <meta property="og:description" content = "Michael Thomas's chamber of commerce page for the wdd231 web development class.">
@@ -23,20 +23,33 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
     <script src="scripts/footer.js" defer></script>
-    <script src="script" defer></script>
-
-<!-- add js, -->
-
+    <script src="scripts/navigation.js" defer></script>
+    
 </head>
+
 <body>
     <header>
         <img src="images/logo.svg" alt="site logo" height="1" width="1">
-        <span>Yorba Linda Chamber of Commerce</span>
+        <span class="title">Yorba Linda Chamber of Commerce</span>
         <button id="ham-btn" class="hamburger" aria-label="navigation menu button"></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li class="current"><a href="#">Business Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-
+        <img class="hero-img" src="images/hero-small.webp" alt="picture of the city of Yorba Linda, CA hills">
+        <h1>Directory</h1>
+        <div id="cards">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis aliquid eos quo doloribus obcaecati ea quam odit quas enim, libero inventore laborum quia harum voluptatum, quae praesentium nostrum fuga molestias. Iure illum laudantium velit optio beatae, iusto ipsa dolorem sunt dignissimos hic natus commodi laborum cupiditate obcaecati amet totam tempore.
+            </p>
+        </div>
     </main>
 
     <footer>
@@ -46,6 +59,7 @@
             <p>714-993-9537​</p>
             <p>info@yorbalindachamber.com</p>
         </div>
+
         <div class="social">
             <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.svg" alt="facebook" width="16" height="16"></a>
             <a href="https://github.com/mt-creations/wdd231" target="_blank"><img src="images/github-icon.svg" alt="github" width="16" height="16"></a>
@@ -55,8 +69,7 @@
         <div class="student-info">
             <p><span id="currentYear"></span></p>
             <p id="lastModified"></p>
-        </div>
-        
+        </div>        
     </footer>
 </body>
 </html>

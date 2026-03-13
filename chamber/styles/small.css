@@ -44,8 +44,30 @@
   
 /***************** HEADER *****************/
 
+header {
+    display: grid;
+    grid-template-columns: 48px auto 1fr;
+    align-items: end;
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    padding: 10px;
+}
 
+header img {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
 
+header span {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--tertiary-color);
+}
+
+header button {
+    padding: 0px 0px 3px 0px;
+}
 
 /*************** NAVIGATION ***************/
 
@@ -66,8 +88,9 @@
 }
 
 nav a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
+    /* text-decoration: underline;
+    text-decoration-thickness: 3px; */
+    background-color: var(--secondary-color);
 }
 
 .navigation li.current a:hover {
@@ -79,18 +102,19 @@ nav a:hover {
 
 .navigation {
     display: none;
-    
+    grid-column: 1 / -1;
 }
 
 .navigation.show {
     display: block;
+    background-color: var(--tertiary-color);
+    margin-top: 10px;
+
 }
 
 .navigation li.current a{
-    font-weight: 900 ;
-    background-color: var(--tertiary-color);
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
+    font-weight: 700 ;
+    background-color: var(--secondary-color);
 }
 
 .navigation ul {
@@ -102,10 +126,23 @@ nav a:hover {
 
 .navigation a {
     display: block;
-    padding: 10px 10px;
+    padding: 10px;
     text-decoration: none;
     color: var(--primary-color);
-    border-bottom: solid 1px var(--tertiary-color);
-    font-size: 1.2rem;
+    border-bottom: solid 1px var(--primary-color);
+    font-size: 1rem;
     font-weight: 600;
+}
+
+
+/*************** MAIN ***************/
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin: 5px;
+    color: var(--primary-color);
 }

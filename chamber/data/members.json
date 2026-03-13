@@ -1,0 +1,102 @@
+{
+    "businesses": [
+        {
+            "company_name": "Advanced Horizon Lending",
+            "company_address": {
+                "street": "2342 Cherry Ln.",
+                "city": "Yorba Linda",
+                "state": "CA",
+                "zip_code": "92886"
+            },
+            "phone_number": "866-866-5545",
+            "website_URL": "https://docu.team/mtiodew/index.php?v=lp&store=75817",
+            "image_file_name": "",
+            "membership_level": "1",
+            "business_type": "Finance"
+        },
+        {
+            "company_name": "California Learning Academy",
+            "company_address": {
+                "street": "23705 Via del Rio",
+                "city": "Yorba Linda",
+                "state": "CA",
+                "zip_code": "92887"
+            },
+            "phone_number": "714-504-4121",
+            "website_URL": "https://docu.team/mtiodew/index.php?v=lp&store=152648",
+            "image_file_name": "",
+            "membership_level": "2",
+            "business_type": "Tutoring"
+        },
+        {
+            "company_name": "NZone Sports OC",
+            "company_address": {
+                "street": "149 Oak Place",
+                "city": "Yorba Linda",
+                "state": "CA",
+                "zip_code": "92886"
+            },
+            "phone_number": "714-841-7787",
+            "website_URL": "https://docu.team/mtiodew/index.php?v=lp&store=139958#",
+            "image_file_name": "",
+            "membership_level": "3",
+            "business_type": "Youth Sports"
+        },
+        {
+            "company_name": "Wild Birds Unlimited",
+            "company_address": {
+                "street": "17611 Yorba Linda Blvd.",
+                "city": "Yorba Linda",
+                "state": "CA",
+                "zip_code": "92886"
+            },
+            "phone_number": "714-654-3222",
+            "website_URL": "https://docu.team/mtiodew/index.php?v=lp&store=75817",
+            "image_file_name": "",
+            "membership_level": "2",
+            "business_type": "Pet Store"
+        },
+        {
+            "company_name": "Turn Key Remodel",
+            "company_address": {
+                "street": "17670 Yorba Linda Blvd.",
+                "city": "Yorba Linda",
+                "state": "CA",
+                "zip_code": "92886"
+            },
+            "phone_number": "714-557-6987",
+            "website_URL": "https://docu.team/mtiodew/index.php?v=lp&store=17560",
+            "image_file_name": "",
+            "membership_level": "1",
+            "business_type": "Construction"
+        },
+        {
+            "company_name": "Atlas Plumbing Heating and Air",
+            "company_address": {
+                "street": "17120 Marda Ave",
+                "city": "Yorba Linda",
+                "state": "CA",
+                "zip_code": "92886"
+            },
+            "phone_number": "714-970-5885",
+            "website_URL": "https://docu.team/mtiodew/index.php?v=lp&store=128313",
+            "image_file_name": "",
+            "membership_level": "2",
+            "business_type": "Plumbing"
+        },
+        {
+            "company_name": "Gerber Concrete",
+            "company_address": {
+                "street": "4925 Via Contento",
+                "city": "Yorba Linda",
+                "state": "CA",
+                "zip_code": "92887"
+            },
+            "phone_number": "714-999-0110",
+            "website_URL": "https://docu.team/mtiodew/index.php?v=lp&store=133156",
+            "image_file_name": "",
+            "membership_level": "1",
+            "business_type": "Construction"
+        }
+    ]
+}
