@@ -88,8 +88,6 @@ header button {
 }
 
 nav a:hover {
-    /* text-decoration: underline;
-    text-decoration-thickness: 3px; */
     background-color: var(--secondary-color);
 }
 

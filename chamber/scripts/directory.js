@@ -1,11 +1,12 @@
 
 
-const url = "members.json;";
+const url = "data/members.json";
 const container = document.querySelector("#cards");
 
 async function getMembers() {
     const response = await fetch(url);
     const data = await response.json();
+    displayMembers(data.members);
 }
 
 function displayMembers(members) {
@@ -17,31 +18,47 @@ function displayMembers(members) {
         let phone = document.createElement('p');
         let website = document.createElement('a');
         let image = document.createElement('img')
-        // let level = document.createElement('p');
-        // let type = document.createElement('p');
         
-        name.textContent = members.company_name;
+        name.textContent = member.company_name;
 
         address.textContent = 
-            members.company_address.street + ", " +
-            members.company_address.city + ", " +
-            members.company_address.state + ", " +
-            members.company_address.zip_code;
+           `${member.company_address.street},
+            ${member.company_address.city},
+            ${member.company_address.state}, ${member.company_address.zip_code}`;
 
-        phone.textContent = members.phone_number;
+        phone.textContent = member.phone_number;
 
         website.textContent = "Visit Website";
-        website.href = members.website_URL;
+        website.href = member.website_URL;
         website.target = "_blank";
 
-        image.setAttribute('src', member.image_file_name);
-        image.setAttribute('alt', `image of ${member.company_name}`)
+        image.setAttribute('src', `images/${member.image_file_name}`);
+        image.setAttribute('alt', `${member.company_name} logo`)
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '200')
-        image.setAttribute('height', '100')
+        image.setAttribute('height', '125')
 
-        card
+        card.appendChild(name);
+        card.appendChild(image);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(website);
 
-
-    })
+        container.appendChild(card);
+    });
 }
+
+getMembers();
+
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+
+gridButton.addEventListener("click", () => {
+    container.classList.add("grid");
+    container.classList.remove("list");
+});
+
+listButton.addEventListener("click", () => {
+    container.classList.add("list");
+    container.classList.remove("grid");
+});
