@@ -4,6 +4,7 @@
     --primary-color: #3d515a; 
     --secondary-color: #a7c7c7; 
     --tertiary-color: #d8f3f3;
+    --white: white;
 }
 
 * {
@@ -18,29 +19,12 @@
     font-style: normal;
 }
   
-.ibm-plex-serif-semibold {
-    font-family: "IBM Plex Serif", serif;
-    font-weight: 600;
-    font-style: normal;
-}
-  
 .ibm-plex-serif-bold {
     font-family: "IBM Plex Serif", serif;
     font-weight: 700;
     font-style: normal;
 }
 
-.ibm-plex-serif-super-bold {
-    font-family: "IBM Plex Serif", serif;
-    font-weight: 900;
-    font-style: normal;
-}
-  
-.ibm-plex-serif-regular-italic {
-    font-family: "IBM Plex Serif", serif;
-    font-weight: 400;
-    font-style: italic;
-}
   
 /***************** HEADER *****************/
 
@@ -171,7 +155,6 @@ h1 {
     border-color: var(--secondary-color);
     background-color: var(--tertiary-color);
     color: var(--primary-color);
-    
 }
 
 .list-btn {
@@ -191,17 +174,60 @@ h1 {
     column-gap: 5px;
 }
 
-.view-buttons :hover {
+.view-buttons button:hover {
     background-color: var(--secondary-color);
 }
 
 
-    /******** CARDS *********/
+    /********** CARDS *********/
+
+.card {
+    border: 1px solid var(--secondary-color);
+    border-radius: 7px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    max-width: 294px;
+    padding-bottom: 10px;
+    
+}
+
+.card h2 {
+    padding: 10px 0;
+    background-color: var(--tertiary-color);
+    margin: 0;
+    border-radius: 7px;
+}
+
+.card img {
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 5px 0;
+}
 
 
+/******************* LIST VIEW ***************/
 
+#cards.list img {
+    display: none;
+}
 
+#cards.list section {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr 2fr;
+    border: none;
+}
 
+#cards.list h2 {
+    font-size: 14px;
+    background: none;
+}
+
+#cards.list section:nth-child(odd) {
+    background-color: var(--tertiary-color);
+}
 
 
 /*************** FOOTER ***************/

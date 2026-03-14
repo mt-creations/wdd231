@@ -13,6 +13,8 @@ function displayMembers(members) {
     members.forEach(member => {
 
         let card = document.createElement('section');
+        card.classList.add("card");
+
         let name = document.createElement('h2');
         let address = document.createElement('p');
         let phone = document.createElement('p');
@@ -28,7 +30,7 @@ function displayMembers(members) {
 
         phone.textContent = member.phone_number;
 
-        website.textContent = "Visit Website";
+        website.textContent = "Visit Our Website";
         website.href = member.website_URL;
         website.target = "_blank";
 
@@ -36,7 +38,6 @@ function displayMembers(members) {
         image.setAttribute('alt', `${member.company_name} logo`)
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '200')
-        image.setAttribute('height', '125')
 
         card.appendChild(name);
         card.appendChild(image);
