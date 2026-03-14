@@ -44,7 +44,11 @@
     </header>
 
     <main>
-        <img class="hero-img" src="images/hero-small.webp" alt="picture of the city of Yorba Linda, CA hills" loading="eager">
+        <picture>
+            <source srcset="images/hero.webp" media="(min-width: 900px)">
+            <img class="hero-img" src="images/hero-small.webp" alt="picture of the city of Yorba Linda, CA hills" loading="eager">
+        </picture>
+
         <h1>Directory</h1>
 
         <div class="view-buttons">
@@ -52,7 +56,7 @@
             <button id="list" class="list-btn"><img src="images/list-task-cropped.svg" alt="list button" title="List View"></button>
         </div>
 
-        <div id="cards" class="cards"></div>
+        <div id="cards" class="cards grid"></div>
 
     </main>
 

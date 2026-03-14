@@ -8,11 +8,12 @@
     }
     
     .title {
-        font-size: x-large;
+        font-size: 27px;
     }
 
-    header {
-        
+    .hero-img {
+        content: url("images/hero.webp");
+        width: 100%;
     }
 
     .hamburger {
@@ -20,18 +21,20 @@
     }
 
     #cards.grid {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
     .navigation {
         display: block;
         background: none;
+        grid-column: 3/4;
     }
 
     .navigation ul {
         display: flex;
         justify-content: right;
         gap: 5px;
+
     }
 
     .navigation a {
