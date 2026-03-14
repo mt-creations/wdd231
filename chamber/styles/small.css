@@ -53,6 +53,11 @@ header button {
     padding: 0px 0px 3px 0px;
 }
 
+.title {
+    font-size: larger;
+}
+
+
 /*************** NAVIGATION ***************/
 
 .hamburger {
@@ -61,15 +66,20 @@ header button {
     font-size: 2rem;
     color: var(--tertiary-color);
     cursor: pointer;
+    display: flex;
+    justify-content: right;
 }
 
 .hamburger::before {
     content: "\2630";
+    width: 44px;
+    height: 44px;
 }
 
 .hamburger.show::before {
     content: "\00d7";
 }
+
 
 nav a:hover {
     background-color: var(--secondary-color);
@@ -190,6 +200,7 @@ h1 {
 .card h2 {
     padding: 10px 0;
     background-color: var(--tertiary-color);
+    color: var(--primary-color);
     margin: 0;
     border-radius: 7px;
 }

@@ -1,0 +1,44 @@
+@media only screen and (min-width: 900px) {
+   
+    :root {
+        --primary-color: #3d515a; 
+        --secondary-color: #a7c7c7; 
+        --tertiary-color: #d8f3f3;
+        --white: white;
+    }
+    
+    .title {
+        font-size: x-large;
+    }
+
+    header {
+        
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    #cards.grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .navigation {
+        display: block;
+        background: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: right;
+        gap: 5px;
+    }
+
+    .navigation a {
+        background-color: var(--tertiary-color);
+        font-size: large;
+        padding: 3px 10px 5px 10px;
+        border-radius: 7px;
+    }
+
+}
