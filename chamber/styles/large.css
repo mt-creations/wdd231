@@ -11,10 +11,6 @@
         font-size: 27px;
     }
 
-    .hero-img {
-        content: url("images/hero.webp");
-        width: 100%;
-    }
 
     .hamburger {
         display: none;
