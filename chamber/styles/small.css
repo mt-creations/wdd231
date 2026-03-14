@@ -135,11 +135,7 @@ h1 {
     display: block;
 }
 
-#cards.list section {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
+
 
     /******** BUTTONS *********/
 
