@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Directory | WDD231</title>
+    <title>Chamber Home | WDD231</title>
 
     <meta name="author" content="Michael Thomas">
-    <meta name="description" content="Chamber of commerce directory page for the wdd231 web development class.">
+    <meta name="description" content="Chamber of commerce home page for the wdd231 web development class.">
 
     <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <meta property="og:title" content="Chamber of Commerce Page">
-    <meta property="og:description" content="Michael Thomas's chamber of commerce directory page for the wdd231 web development class.">
-    <meta property="og:url" content="https://mt-creations.github.io/wdd231/chamber/directory.html">
+    <meta property="og:title" content="Chamber of Commerce Home Page">
+    <meta property="og:description" content="Michael Thomas's chamber of commerce home page for the wdd231 web development class.">
+    <meta property="og:url" content="https://mt-creations.github.io/wdd231/chamber/index.html">
     <meta property="og:image" content="https://mt-creations.github.io/wdd231/chamber/images/1.webp">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,9 +35,9 @@
 
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="https://mt-creations.github.io/wdd231/chamber/index.html">Home</a></li>
+                <li class="current"><a href="https://mt-creations.github.io/wdd231/chamber/index.html">Home</a></li>
                 <li><a href="#">Discover</a></li>
-                <li class="current"><a href="https://mt-creations.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                <li><a href="https://mt-creations.github.io/wdd231/chamber/directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
             </ul>
         </nav>
@@ -49,14 +49,20 @@
             <img class="hero-img" src="images/hero-small.webp" alt="picture of the city of Yorba Linda, CA hills" loading="eager">
         </picture>
 
-        <h1>Directory</h1>
+        <h1>Home</h1>
 
-        <div class="view-buttons">
-            <button id="grid" class="grid-btn"><img src="images/grid-3x3.svg" alt="grid button" title="Grid View"></button>
-            <button id="list" class="list-btn"><img src="images/list-task-cropped.svg" alt="list button" title="List View"></button>
-        </div>
+        <section><h2>events</h2></section>
 
-        <div id="cards" class="cards grid"></div>
+        <section>
+            <div><h2>current weather</h2></div>
+            <div><h2>three day forecast</h2></div>
+        </section>
+
+        <section>
+            <h2>Featured Business</h2>
+        </section>
+
+        
 
     </main>
 
