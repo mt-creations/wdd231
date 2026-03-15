@@ -202,7 +202,8 @@ h1 {
     background-color: var(--tertiary-color);
     color: var(--primary-color);
     margin: 0;
-    border-radius: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
 .card img {
@@ -280,3 +281,29 @@ footer {
     border-top: 1px solid var(--secondary-color);
 }
 
+/******************* HOME PAGE ***************/
+
+.events {
+    border: 1px solid var(--secondary-color);
+    border-radius: 7px;
+    margin: 5px;
+    text-align: center;
+}
+
+.events h2 {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    margin-top: 0;
+    padding: 10px;
+    display: flex; 
+    justify-content: center;
+    align-self: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.event-title {
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-decoration: underline;
+}
