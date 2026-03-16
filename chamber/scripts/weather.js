@@ -27,7 +27,7 @@ async function getWeather() {
         const forecastData = await forecastResponse.json();
         const forecastList = document.getElementById("forecast");
 
-        for (let i = 8; i <= 24; i += 8) {
+        for (let i = 1; i <= 24; i += 8) {
             const date = new Date(forecastData.list[i].dt_txt);
             const temp = Math.round(forecastData.list[i].main.temp);
             const day = date.toLocaleDateString("en-US", {weekday: "long"});
