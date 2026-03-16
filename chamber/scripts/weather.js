@@ -17,7 +17,11 @@ async function getWeather() {
         document.getElementById("current-temp").textContent = Math.round(currentData.main.temp);
 
         document.getElementById("condition").textContent = currentData.weather[0].description;
-
+        const iconCode = currentData.weather[0].icon;
+        const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+        const icon = document.getElementById("weather-icon");
+        icon.src = iconUrl;
+        icon.alt = currentData.weather[0].description;
 
         const forecastResponse = await fetch(forecastUrl);
         const forecastData = await forecastResponse.json();
