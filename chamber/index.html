@@ -24,7 +24,7 @@
 
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 
 <body>
@@ -52,7 +52,7 @@
         <h1>Home</h1>
 
         <section class="events">
-            <h2>Upcoming Events</h2>
+            <h2 class="home-h2">Upcoming Events</h2>
             <div>
                 <p class="event-title">Shamrock'N Run<p>
                 <p>Date: 03-18-2026<br>
@@ -69,13 +69,21 @@
             </div>
         </section>
 
-        <section>
-            <div><h2>Current weather</h2></div>
-            <div><h2>Three day forecast</h2></div>
+        <section class="weather">
+            <h2 class="home-h2">Weather</h2>
+            <div>
+                <h3 class="home-h3">Current Weather</h3>
+                <p>Temperature: <span id="current-temp"></span> °F</p>
+                <p>Condition: <span id="condition"> </span></p>
+            </div>
+            <div>
+                <h3 class="home-h3">Forecast</h3>
+                <ul id="forecast" class="forecast"></ul>
+            </div>
         </section>
 
         <section>
-            <h2>Featured Business</h2>
+            <h2 class="home-h2">Featured Businesses</h2>
         </section>
 
         
