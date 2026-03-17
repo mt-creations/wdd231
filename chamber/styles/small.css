@@ -303,15 +303,36 @@ footer {
     align-self: center;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
+    border: 1px solid var(--secondary-color);
     
 }
 
 .home-h3 {
-    color: var(--primary-color);
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
     margin: 0;
     padding: 2px;
     align-self: center;
-    text-decoration: underline;
+}
+
+.featured-card h3 {
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    margin-top: 0;
+    padding: 4px 0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.featured-card {
+    margin: 5px;
+}
+
+.featured-section {
+    border: 1px solid var(--secondary-color);
+    margin: 0 5px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
 .event-title {
