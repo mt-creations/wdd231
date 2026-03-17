@@ -72,5 +72,16 @@
         align-items: center;
     }
 
-    
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .student-info,
+    .chamber-info {
+        border: none;
+    }
 }
