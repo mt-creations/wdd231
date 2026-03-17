@@ -19,10 +19,11 @@ function displayMembers(members) {
         let address = document.createElement('p');
         let phone = document.createElement('p');
         let website = document.createElement('a');
-        let image = document.createElement('img')
-        let level = document.createElement('p')
+        let image = document.createElement('img');
+        let level = document.createElement('p');
         
         name.textContent = member.company_name;
+        name.classList.add('dir-name');
 
         address.textContent = 
            `${member.company_address.street},
@@ -38,7 +39,9 @@ function displayMembers(members) {
         image.setAttribute('src', `images/${member.image_file_name}`);
         image.setAttribute('alt', `${member.company_name} logo`)
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '200')
+        image.setAttribute('width', '200');
+
+        level.classList.add('level');
 
         if (member.membership_level === "2") {
             level.textContent = "🥈 Silver Member 🥈";    

@@ -217,7 +217,7 @@ h1 {
 
 /******************* LIST VIEW ***************/
 
-#cards.list img {
+#cards.list img{
     display: none;
 }
 
@@ -234,6 +234,14 @@ h1 {
 
 #cards.list section:nth-child(odd) {
     background-color: var(--tertiary-color);
+}
+
+#cards.list .level {
+    display: none;
+}
+
+#cards.list .dir-name {
+    font-size: large;
 }
 
 
