@@ -40,4 +40,37 @@
         border-radius: 7px;
     }
 
+    /* ************** HOME PAGE ********** */
+
+    .featured-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 60px 1fr;
+    }
+
+    .fb-title {
+        grid-column: 1/-1;
+    }
+
+    #featured-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+        grid-column: 1/-1;
+    }
+
+    .event-weather {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .events {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 49.44px 1fr;
+        align-items: center;
+    }
+
+    
 }

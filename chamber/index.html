@@ -22,8 +22,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
 
-    <script src="scripts/footer.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/featured.js" defer></script>
 </head>
@@ -51,41 +51,48 @@
         </picture>
 
         <h1>Home</h1>
+        <div class="event-weather">
+            <section class="events">
+                <h2 class="home-h2">Upcoming Events</h2>
+                <div class="events-div">
+                    <p class="event-title">Shamrock'N Run<p>
+                    <p>Date: 03-18-2026<br>
+                    Time: 8 AM<br>
+                    Location: Yorba Regional Park
+                    </p>
+                    <div class="middle-event">
+                        <p class="event-title">Community Connection Luncheon<p>
+                        <p>Date: 03-21-2026<br>
+                            Time: 12:30 PM to 2 PM<br>
+                            Location: Black Gold Golf Club
+                        </p>
+                    </div>
+                    <p class="event-title">CPR Cerification<p>
+                    <p>Date: 03-27-2026<br>
+                        Time: 10 AM to 4 PM<br>
+                        Location: 
+                    </p>
 
-        <section class="events">
-            <h2 class="home-h2">Upcoming Events</h2>
-            <div>
-                <p class="event-title">Shamrock'N Run<p>
-                <p>Date: 03-18-2026<br>
-                   Time: 8 AM<br>
-                   Location: Yorba Regional Park
-                </p>
-
-                <p class="event-title">Community Connection Luncheon<p>
-                <p>Date: 03-21-2026<br>
-                    Time: 12:30 PM<br>
-                    Location: Black Gold Golf Club
-                </p>
-
-            </div>
-        </section>
-
-        <section class="weather">
-            <h2 class="home-h2">Weather</h2>
-            <div>
-                <h3 class="home-h3">Current Weather</h3>
-                <img src="" id="weather-icon" alt="Weather icon">
-                <p class="p-temp">Temperature: <span id="current-temp"></span> °F</p>
-                <p>Condition: <span id="condition"> </span></p>
-            </div>
-            <div>
-                <h3 class="home-h3">Forecast</h3>
-                <ul id="forecast" class="forecast"></ul>
-            </div>
-        </section>
+                </div>
+            </section>
+        
+            <section class="weather">
+                <h2 class="home-h2">Weather</h2>
+                <div>
+                    <h3 class="home-h3">Current Weather</h3>
+                    <img src="" id="weather-icon" alt="Weather icon">
+                    <p class="p-temp">Temperature: <span id="current-temp"></span> °F</p>
+                    <p>Condition: <span id="condition"> </span></p>
+                </div>
+                <div>
+                    <h3 class="home-h3">Forecast</h3>
+                    <ul id="forecast" class="forecast"></ul>
+                </div>
+            </section>
+        </div>
 
         <section class="featured-section">
-            <h2 class="home-h2">Featured Businesses</h2>
+            <h2 class="home-h2 fb-title">Featured Businesses</h2>
             <div id="featured-cards"></div>
         </section>
 

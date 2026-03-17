@@ -337,7 +337,17 @@ footer {
 
 .event-title {
     font-weight: 700;
+    font-size: large;
     text-decoration: underline;
+}
+
+.events-div p {
+    margin: 8px 0 16px 0;
+}
+
+.middle-event {
+    background-color: var(--tertiary-color);
+    padding: 3px;
 }
 
 .forecast {
@@ -351,7 +361,8 @@ footer {
 }
 
 #weather-icon {
-    padding-top: 10px;
+    padding-top: 0px;
+    
 }
 
 .p-temp {
