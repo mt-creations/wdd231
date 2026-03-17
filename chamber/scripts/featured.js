@@ -26,6 +26,7 @@ function displayMembers(members) {
         let phone = document.createElement('p');
         let website = document.createElement('a');
         let image = document.createElement('img')
+        let level = document.createElement('p')
         
         name.textContent = member.company_name;
 
@@ -45,10 +46,18 @@ function displayMembers(members) {
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '200')
 
+        if (member.membership_level === "2") {
+            level.textContent = "🥈 Silver Member 🥈";    
+        }
+        else {
+            level.textContent = "🥇 Gold Member 🥇"
+        }
+
         card.appendChild(name);
         card.appendChild(image);
         card.appendChild(address);
         card.appendChild(phone);
+        card.appendChild(level);
         card.appendChild(website);
 
         container.appendChild(card);
