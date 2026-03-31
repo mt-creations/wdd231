@@ -111,6 +111,10 @@ function displayCourses(courseList) {
             p.textContent += " ✓";
         }
 
+        p.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
+
         container.appendChild(p);
     });
     
