@@ -1,0 +1,49 @@
+
+/************ COLORS / FONTS *******************/
+
+:root {
+    --primary-color: #131662;
+    --secondary-color: #d7e855; 
+    --tertiary-color: #d8f3f3;
+}
+
+*{
+    font-family: IBM Plex Serif;
+    box-sizing: border-box;   
+}
+
+/**************** HEADER *******************/
+
+header{
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/*************** NAVIGATION ******************/
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
