@@ -30,4 +30,24 @@
     .navigation a {
         border: none;
     }
+
+    section.student {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 15px;
+    }
+
+    .about-me {
+        grid-column: 1/2;
+    }
+
+    .about-me h2,
+    .student-photo h2 {
+        margin-top: 0;
+    }
+
+
+
+
+
 }
