@@ -3,13 +3,14 @@
 
 :root {
     --primary-color: #131662;
-    --secondary-color: #d8dadb; 
-    --tertiary-color: #d8f3f3;
+    --secondary-color: #e5f5fc; 
+    --tertiary-color: #c2f1f1;
 }
 
 *{
     font-family: IBM Plex Serif;
-    box-sizing: border-box;   
+    box-sizing: border-box; 
+    color: var(--primary-color);  
 }
 
 /**************** HEADER *******************/
@@ -19,8 +20,9 @@ header{
     grid-template-columns: 24px auto 44px;
     align-items: end;
     padding: 5px 0 5px 10px;
-    border-bottom: solid 1px var(--secondary-color);
+    border-bottom: solid 1px var(--primary-color);
     column-gap: 8px;
+    background-color: var(--secondary-color);
 }
 
 header img {
@@ -30,7 +32,7 @@ header img {
 }
 
 header span {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--primary-color);
 }
 
@@ -76,7 +78,7 @@ header span {
 }
 
 .navigation li.current {
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
 }
 
 .navigation a:hover {
@@ -85,6 +87,136 @@ header span {
 }
 
 
+/************ MAIN - STUDENT *************/
+
+h1 {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.student {
+    display: block;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    padding-bottom: 3px;
+    border-bottom: var(--primary-color);
+}
+
+.student p {
+    margin: 0 10px;
+}
+
+section.about-me {
+    background-color: var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.student-photo {
+    background-color: var(--secondary-color);
+    padding-bottom: 15px;
+}
+
+.student-photo img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px gray;
+}
 
 
-/*************** MAIN ******************/
+/************ MAIN - COURSES *************/
+
+.certificates {
+    margin: 10px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.cert-btn {
+    flex: 1;
+    height: 44px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.cert-btn:hover {
+    background-color: var(--tertiary-color);
+    cursor: pointer;
+}
+
+.courses-wdd p, .courses-cse p {
+    display: block;
+    text-align: center;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 3px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 2px; 
+}
+
+.courses-wdd, .courses-cse {
+    display: none;
+}
+
+.total-credits {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.completed {
+    background-color: #a7c7c7;
+    
+}
+
+/*************** FOOTER ****************/
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    width: 44px;
+    height: 44PX;
+    justify-content: center;
+    align-items: center;
+    border: var(--primary-color) solid 1px ;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: var(--tertiary-color);
+}
