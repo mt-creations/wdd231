@@ -1,0 +1,322 @@
+/****************** ROOT ******************/
+
+:root {
+    --primary-color: #3d515a; 
+    --secondary-color: #a7c7c7; 
+    --tertiary-color: #d8f3f3;
+    --white: white;
+}
+
+* {
+    font-family: "IBM Plex Serif", serif; 
+}
+
+/****************** FONT ******************/
+
+.ibm-plex-serif-regular {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.ibm-plex-serif-bold {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+  
+/***************** HEADER *****************/
+
+header {
+    display: grid;
+    grid-template-columns: 48px auto 1fr;
+    align-items: end;
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+header span {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--tertiary-color);
+}
+
+header button {
+    padding: 0px 0px 3px 0px;
+}
+
+.title {
+    font-size: larger;
+}
+
+
+/*************** NAVIGATION ***************/
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--tertiary-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: right;
+}
+
+.hamburger::before {
+    content: "\2630";
+    width: 44px;
+    height: 44px;
+}
+
+.hamburger.show::before {
+    content: "\00d7";
+}
+
+
+nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+.navigation li.current a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--secondary-color);
+}
+
+.navigation {
+    display: none;
+    grid-column: 1 / -1;
+}
+
+.navigation.show {
+    display: block;
+    background-color: var(--tertiary-color);
+    margin-top: 10px;
+}
+
+.navigation li.current a{
+    font-weight: 700 ;
+    background-color: var(--secondary-color);
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: solid 1px var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/*************** MAIN ***************/
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.call-to-action {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 7px;
+    max-width: 300px;
+}
+
+.cta-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    font-weight: 700;
+    border-radius: 7px;
+    padding: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+h1 {
+    margin: 5px 5px 10px 5px;
+    color: var(--primary-color);
+}
+
+#cards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#cards.list {
+    display: block;
+}
+
+
+
+    /******** BUTTONS *********/
+
+
+.grid-btn, .list-btn {
+    width: 88px;
+    height: 44px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    border-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+.list-btn {
+    margin-left: 0px;
+}
+
+.list-btn img {
+    height: 35px;
+}
+
+.grid-btn img {
+    width: 30px;
+}
+
+.view-buttons {
+    display: flex;
+    column-gap: 5px;
+}
+
+.view-buttons button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+    /********** CARDS *********/
+
+.card {
+    border: 1px solid var(--secondary-color);
+    border-radius: 7px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    padding-bottom: 10px;
+    
+}
+
+.card h2 {
+    padding: 10px 0;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    margin: 0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.card img {
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+
+/******************* LIST VIEW ***************/
+
+#cards.list img{
+    display: none;
+}
+
+#cards.list section {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr 2fr;
+    border: none;
+}
+
+#cards.list h2 {
+    font-size: 14px;
+    background: none;
+}
+
+#cards.list section:nth-child(odd) {
+    background-color: var(--tertiary-color);
+}
+
+#cards.list .level {
+    display: none;
+}
+
+#cards.list .dir-name {
+    font-size: large;
+}
+
+
+/*************** FOOTER ***************/
+
+footer {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 600;
+    padding: 2px 10px 10px 10px ;
+    margin-top: 1rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    margin: 16px 0;
+}
+
+.social a img{
+    width: 44px;
+    height: 44px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+
+.social a:hover {
+    background-color: var(--secondary-color);
+}
+
+.chamber-info {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.chamber-info p {
+    margin: 8px 0;
+}
+
+.student-info p {
+    margin: 8px 0;
+}
+
+.student-info {
+    border-top: 1px solid var(--secondary-color);
+}

@@ -1,0 +1,89 @@
+@media only screen and (min-width: 600px) {
+   
+    :root {
+        --primary-color: #3d515a; 
+        --secondary-color: #a7c7c7; 
+        --tertiary-color: #d8f3f3;
+        --white: white;
+    }
+    
+    .title {
+        font-size: 27px;
+    }
+
+
+    .hamburger {
+        display: none;
+    }
+
+    #cards.grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+   
+
+    .navigation {
+        display: block;
+        background: none;
+        grid-column: 3/4;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: right;
+        gap: 5px;
+
+    }
+
+    .navigation a {
+        background-color: var(--tertiary-color);
+        font-size: large;
+        padding: 3px 10px 5px 10px;
+        border-radius: 7px;
+    }
+
+    /* ************** HOME PAGE ********** */
+
+    .featured-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 60px 1fr;
+    }
+
+    .fb-title {
+        grid-column: 1/-1;
+    }
+
+    #featured-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+        grid-column: 1/-1;
+    }
+
+    .event-weather {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .events {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 49.44px 1fr;
+        align-items: center;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .student-info,
+    .chamber-info {
+        border: none;
+    }
+}
