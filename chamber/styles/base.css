@@ -153,7 +153,7 @@ nav a:hover {
     font-weight: 700;
     border-radius: 7px;
     padding: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
     transition: all 0.3s ease;
 }
 
@@ -319,4 +319,92 @@ footer {
 
 .student-info {
     border-top: 1px solid var(--secondary-color);
+}
+
+/******************* HOME PAGE ***************/
+
+.events,
+.weather 
+{
+    border: 1px solid var(--secondary-color);
+    border-radius: 7px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-h2 {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 10px;
+    display: flex; 
+    justify-content: center;
+    align-self: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border: 1px solid var(--secondary-color);
+    
+}
+
+.home-h3 {
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 2px;
+    align-self: center;
+}
+
+.featured-card h3 {
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    margin-top: 0;
+    padding: 4px 0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.featured-card {
+    margin: 5px;
+}
+
+.featured-section {
+    border: 1px solid var(--secondary-color);
+    margin: 0 5px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.event-title {
+    font-weight: 700;
+    font-size: large;
+    text-decoration: underline;
+}
+
+.events-div p {
+    margin: 8px 0 16px 0;
+}
+
+.middle-event {
+    background-color: var(--tertiary-color);
+    padding: 3px;
+}
+
+.forecast {
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.forecast li {
+    padding: 5px;
+}
+
+#weather-icon {
+    padding-top: 0px;
+    
+}
+
+.p-temp {
+    margin-top: 8px;
 }
