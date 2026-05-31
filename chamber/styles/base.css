@@ -507,7 +507,7 @@ input[type="submit"]:hover {
     align-items: center;
     flex-direction: column;
 
-    transform: translatex(-80px);
+    transform: translateX(-200px);
     animation: slideIn 1s ease forwards;
 }
 
@@ -519,7 +519,7 @@ input[type="submit"]:hover {
 @keyframes slideIn {
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translatex(0);
     }
 }
 
@@ -553,4 +553,7 @@ input[type="submit"]:hover {
     transition: background-color 1s ease;
 }
 
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
 

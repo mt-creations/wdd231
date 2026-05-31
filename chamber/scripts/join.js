@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const timestamp = document.getElementById("timestamp");
     if (timestamp) {
-        timestamp.value = new Date().toLocaleString();
+        timestamp.value = new Date().toISOString();
     }
 
     window.openModal = function(id) {
