@@ -1,16 +1,16 @@
-document.getElementById("timestamp").value = new Date().toLocaleString();
+document.addEventListener("DOMContentLoaded", () => {
+    const timestamp = document.getElementById("timestamp");
+    if (timestamp) {
+        timestamp.value = new Date().toLocaleString();
+    }
+
+    window.openModal = function(id) {
+        document.getElementById(id).showModal();
+    };
+
+    window.closeModal = function(id) {
+        document.getElementById(id).close();
+    };
 
 
-
-const url = "data/levels.json";
-const container = document.querySelector("#memberLevel");
-
-function displayLevels(levels) {
-    levels.forEach(level => {
-        let card = document.createElement('section');
-        card.classList.add("card");
-
-        let 
-
-    });
-}
+});
