@@ -479,7 +479,6 @@ input[type="submit"]:hover {
     cursor: pointer;
     color: var(--primary-color);
     background-color: rgb(247, 182, 231);
-    color: var(--primary-color);
 }
 
 .member-level {
