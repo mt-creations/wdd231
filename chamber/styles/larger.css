@@ -90,4 +90,30 @@
         align-items: center;
     }
 
+
+    /* *********** JOIN PAGE ************* */
+
+    .join-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+
+    .member-level {
+        padding-top: 25px;
+        background-color: var(--tertiary-color);
+        margin-bottom: 0;
+    }
+
+    .member-card {
+        background-color: var(--white);
+    }
+
+
+
+
+
+
+
+
 }
