@@ -1,16 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
+
     const timestamp = document.getElementById("timestamp");
     if (timestamp) {
         timestamp.value = new Date().toISOString();
     }
 
-    window.openModal = function(id) {
-        document.getElementById(id).showModal();
-    };
+    document.querySelectorAll("[data-modal").forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
 
-    window.closeModal = function(id) {
-        document.getElementById(id).close();
-    };
+            const id = link.getAttribute("data-modal");
+            const modal = document.getElementById(id);
 
+            if (modal) {
+                modal.showModal();
+            }
+        });
+    });
+
+    document.querySelectorAll("[data-close]").forEach(btn => {
+        btn.addEventListener("click", () => {
+            
+            const id = btn.getAttribute("data-close");
+            const modal = document.getElementById(id);
+
+            if (modal) {
+                modal.closest();
+            }
+        });
+    });
 
 });
