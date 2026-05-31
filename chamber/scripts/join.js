@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         timestamp.value = new Date().toISOString();
     }
 
-    document.querySelectorAll("[data-modal").forEach(link => {
+    document.querySelectorAll("[data-modal]").forEach(link => {
         link.addEventListener("click", (e) => {
             e.preventDefault();
 
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const modal = document.getElementById(id);
 
             if (modal) {
-                modal.closest();
+                modal.close();
             }
         });
     });
