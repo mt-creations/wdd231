@@ -408,3 +408,92 @@ footer {
 .p-temp {
     margin-top: 8px;
 }
+
+
+/******************JOIN******************/
+
+.form {
+    background-color: var(--tertiary-color);
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
+}
+
+.form input[type="text"] {
+    height: 44px;
+    border-radius: 5px;
+    border-color: var(--primary-color);
+    border-left: 6px solid var(--primary-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.form input[type="email"] {
+    height: 44px;
+    border-radius: 5px;
+    border-color: var(--primary-color);
+    border-left: 6px solid var(--primary-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.form input[type="phone"] {
+    height: 44px;
+    border-radius: 5px;
+    border-color: var(--primary-color);
+    border-left: 6px solid var(--primary-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.join-h2 {
+    color: var(--primary-color);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 1rem auto;
+    height: 44px;
+    border-radius: 5px;
+    border-color: var(--primary-color);
+    font-style: italic;
+    font-weight: 700;
+    color: var(--primary-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+
+    transition: background-color 1s ease;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: rgb(247, 182, 231);
+    color: var(--primary-color);
+}
+
+.wave {
+    display: inline-block;
+}
+
+.wave span {
+    display: inline-block;
+    animation: bounce 0.6s ease forwards;
+}
+
+@keyframes bounce {
+    30% {transform: translateY(-15px);}
+    60% {transform: translateY(0);}
+}
+
+

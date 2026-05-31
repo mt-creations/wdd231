@@ -1,0 +1,19 @@
+{
+    "levels":[
+        {
+            "level": "Non Profit Membership Level",
+            "benefits": "We love our non profit neighbors and are here to support your efforts to help our community thrive.  We offer free spotlight positions for non profit fundraising events and an open invitation to all of our monthly networking luncheons.",
+            "membership fee": "0",
+            "icon": "🤝"
+        },
+        {
+            "level": "Bronze Membership Level",
+            "benefits": "We love our non profit neighbors and are here to support your efforts to help our community thrive.  We offer free spotlight positions for non profit fundraising events and an open invitation to all of our monthly networking luncheons.",
+            "icon": "🤝"
+        }
+    ]
+
+
+
+
+}

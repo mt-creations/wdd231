@@ -23,8 +23,7 @@
 
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/featured.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
@@ -47,8 +46,10 @@
 
         <section>
             <div>
-                <form method="get" action="thankyou.html">
+                <form class="form" method="get" action="thankyou.html">
                     
+                    <h2 class="join-h2">Membership Application Form</h2>
+
                     <label>First Name: 
                         <input type="text"
                         name="first-name"
@@ -90,7 +91,8 @@
                         <input type="phone"
                         name="phone"
                         title="Enter Your Phone Number"
-                        autocomplete="tel">
+                        autocomplete="tel"
+                        required>
                     </label>
 
                     <label>
@@ -104,16 +106,38 @@
 
                     <label>
                         Membership Level:
-                        <select name="membership-level" title="Select A Membership Level">
-                            <option value="np">Non Profit Membership</option>
+                        <select name="membership-level" title="Select A Membership Level" required>
+                            <option value="" selected disabled>Select</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
                         </select>
                     </label>
 
+                    <label>
+                        Business/Organization Description:
+                        <textarea
+                            name="organization-description" 
+                            title="Enter a description of your organization">
+                        </textarea>
+                    </label>
+
+                    <label> 
+                        <input type="hidden"
+                        name="timestamp"
+                        id="timestamp">
+                    </label>
+
+                    <input class="submit" type="submit" value="Submit Application">
 
                 </form>
             </div>
 
-            <div></div>
+            <div class="member-level" id="member-level">
+                <h2 class="join-h2">Membership Levels</h2>
+            </div>
+
         </section>
 
     </main>
