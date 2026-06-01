@@ -19,5 +19,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("timestamp").textContent =
         params.get("timestamp");
-
 });
