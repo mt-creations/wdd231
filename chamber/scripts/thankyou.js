@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
 
     document.getElementById("firstName").textContent =
-        params.get("firstName");
+        params.get("first-name");
 
     document.getElementById("lastName").textContent =
-        params.get("lastName");
+        params.get("last-name");
 
     document.getElementById("email").textContent =
         params.get("email");
@@ -17,6 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("organization").textContent =
         params.get("organization");
 
+    const timestamp = params.get("timestamp");
+
     document.getElementById("timestamp").textContent =
-        params.get("timestamp");
+        new Date(timestamp).toLocaleString("en-US", {
+            dateStyle: "long", timeStyle: "short"
+        });
 });
