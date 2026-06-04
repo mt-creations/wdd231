@@ -1,16 +1,167 @@
 
-/*       Color Scheme
-Text:       Dark Brown #4A3F35
-Primary:  Forest Green #2D6A4F
-Secondary:  Leaf Green #95D5B2
-Tertiary:        Beige  #FAF3E0
-Highlights:      Gold	#D4A373	 */
+/********** WDD231 FINAL PROJECT ***********/
 
-.test-1 {
-    background-color: #FAF3E0;
-    color: #4A3F35;
+/************* COLORS &FONT ****************/
+
+:root {
+    --text-color: #000000;
+    --primary-color: #95D5B2;
+    --secondary-color: #2D6A4F;
+    --tertiary-color: #FAF3E0;
+    --highlight-color: #D4A373;
+    --dark-highlight-color: #4A3F35;
 }
+
+.ibm-plex-serif-regular {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.ibm-plex-serif-bold {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/************* HEADER *****************/
+
 header {
-    background-color: #2D6A4F;
-    color: #D4A373;
+    background-color: var(--primary-color);
+    
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    
 }
+
+header h1 {
+    text-align: center;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--dark-highlight-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: right;
+}
+
+.hamburger::before {
+    content: "\2630";
+    width: 44px;
+    height: 44px;
+}
+
+.hamburger.show::before {
+    content: "\00d7";
+}
+
+
+nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+.navigation li.current a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--secondary-color);
+}
+
+.navigation {
+    display: none;
+    grid-column: 1 / -1;
+}
+
+.navigation.show {
+    display: block;
+    background-color: var(--tertiary-color);
+    margin-top: 10px;
+}
+
+.navigation li.current a{
+    font-weight: 700 ;
+    background-color: var(--secondary-color);
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-bottom: solid 1px var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+/************* FOOTER ****************/
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    font-weight: 600;
+    padding: 2px 10px 10px 10px ;
+    margin-top: 1rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    margin: 16px 0;
+}
+
+.social a img{
+    width: 44px;
+    height: 44px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+
+.social a:hover {
+    background-color: var(--tertiary-color);
+    border-radius: 13px solid transparent;
+}
+
+.student-info p {
+    margin: 8px 0;
+}
+
+.student-info {
+    border-top: 1px solid var(--secondary-color);
+}
+
+/************* HOME ******************/
+
+.intro {
+    background-color: #95D5B2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem 1rem 1rem;
+    padding: 15px;
+    border: 2px solid #4A3F35;
+}
+
+.allergens {
+    background-color: #FAF3E0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 1rem 1rem 1rem;
+    padding: 15px;
+    border: 2px solid #4A3F35;
+    
+}
+
+

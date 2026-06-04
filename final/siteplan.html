@@ -25,6 +25,9 @@
     <meta property="og:url" content="#">
     <meta property="og:image" content="#">
 
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
 </head>
 
 <body>
@@ -33,62 +36,64 @@
 
     <header>
         <img src="#" alt="#">
-        <span>Allergies for Everyone</span>
-        <button>Hamburger menu button</button>
-        <nav>
+        <h1><span>Allergies for Everyone</span></h1>
+        <button class="hamburger" id="ham-btn"  aria-label="navigation menu"></button>
+        <nav class="navigation" id="nav-bar">
             <ul>
-                <li>Home</li>
-                <li>Kitchen</li>  
-                <li>Support</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Kitchen</a></li>
+                <li><a href="#">Support</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <H1>Home</H1>
+        <H2>Home</H2>
 
 <!-- THIS SECTION WILL HAVE 2 PARTS: AN INTO PARAGRAPH,
 AND IMAGES OF TOP 6 FOOD ALLERGENS THAT YOU CAN CLICK
 ON TO BRING UP A DIALOG BOX WITH MORE INFO. -->
 
-        <section class="test-1">
-            <div>
-                <p class="test-2">Introduction to the website. 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore itaque ab error repudiandae, consectetur perferendis vel laborum modi nulla distinctio consequatur nisi. Provident velit quisquam molestiae quos natus officia nostrum.
+        <section class="home-main">
+            <div class="intro">
+                <h3>Introduction to the website.</h3>
+                <p> Lorem ipsum dolor sit amet      consectetur adipisicing elit. Inventore itaque ab error repudiandae, consectetur perferendis vel laborum modi nulla distinctio consequatur nisi. Provident velit quisquam molestiae quos natus officia nostrum.
                 </p>
             </div>
 
-            <div>
-                <div>
-                    <img src="#" alt="#">
-                    <h3></h3>
-                    <a href="#" data-modal="#">Peanuts</a>
-                </div>
-                <div>
-                    <img src="#" alt="#">
-                    <h3></h3>
-                    <a href="#" data-modal="#">Tree Nuts</a>
-                </div>
-                <div>
-                    <img src="#" alt="#">
-                    <h3></h3>
-                    <a href="#" data-modal="#">Milk</a>
-                </div>
-                <div>
-                    <img src="#" alt="#">
-                    <h3></h3>
-                    <a href="#" data-modal="#">Eggs</a>
-                </div>
-                <div>
-                    <img src="#" alt="#">
-                    <h3></h3>
-                    <a href="#" data-modal="#">Wheat</a>
-                </div>
-                <div>
-                    <img src="#" alt="#">
-                    <h3></h3>
-                    <a href="#" data-modal="#">Soy</a>
-                </div>
+            <div class="allergens">
+                <figure>
+                    <img src="#" alt="Peanuts">
+                    <figcaption>Peanuts</figcaption>
+                    <a href="#" data-modal="#"></a>
+                </figure>
+                <figure>
+                    <img src="#" alt="Tree Nuts">
+                    <figcaption>Tree Nuts</figcaption>
+                    <a href="#" data-modal="#"></a>
+                </figure>
+                <figure>
+                    <img src="#" alt="Milk">
+                    <figcaption>Milk</figcaption>
+                    <a href="#" data-modal="#"></a>
+                </figure>
+                <figure>
+                    <img src="#" alt="Eggs">
+                    <figcaption>Eggs</figcaption>
+                    <a href="#" data-modal="#"></a>
+                </figure>
+                <figure>
+                    <img src="#" alt="Wheat">
+                    <figcaption>Wheat</figcaption>
+                    <a href="#" data-modal="#"></a>
+                </figure>
+                <figure>
+                    <img src="#" alt="Soy">
+                    <figcaption>Soy</figcaption>
+                    <a href="#" data-modal="#"></a>
+                </figure>
+                
+                
 
                 <dialog></dialog>
                 <dialog></dialog>
@@ -104,6 +109,18 @@ ON TO BRING UP A DIALOG BOX WITH MORE INFO. -->
 
     <footer>
         <!-- FOOTER WILL HAVE THE MOST OF THE STANDARD ELEMENTS FOR THIS CLASS WITH THE ADDITION OF AN ATTRIBUTE LINK FOR CITING SOURCES -->
+
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://github.com/mt-creations/wdd231" target="_blank"><img src="images/github-icon.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin-icon.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.svg" alt="instagram" width="16" height="16"></a>
+        </div>
+
+        <div class="student-info">
+            <p><span id="currentYear"></span></p>
+            <p id="lastModified"></p>
+        </div> 
     </footer>
 
 </body>
