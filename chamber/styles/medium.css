@@ -1,0 +1,42 @@
+@media only screen and (min-width: 641px) and (max-width:1024px) {
+
+    .discover-card {
+        display: grid;
+        column-gap: 15px;
+        grid-template-areas:
+        "title title"
+        "image description"
+        "image address" 
+        "image button" ;
+    }
+
+    .discover-card figure {
+        grid-area: image;
+    }
+
+    .discover-card img {
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 10px;
+        min-width: 250px;
+    }
+
+    .discover-card h2 {
+        grid-area: title;
+        padding-bottom: 10px ;
+    }
+
+    .discover-card p {
+        grid-area: description;
+    }
+
+    .discover-card address {
+        grid-area: address;
+    }
+
+    .discover-card button {
+        grid-area: button;
+        
+    }
+
+}

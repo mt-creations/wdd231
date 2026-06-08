@@ -570,3 +570,74 @@ dialog::backdrop {
     color: var(--primary-color);
     background-color: var(--tertiary-color);
 }
+
+
+/****************** DISCOVER *****************/
+
+.discover-h1 {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.discover-card {
+    margin: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    min-width: 300px;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+
+    display: grid;
+    grid-template-areas:
+    "title"
+    "image"
+    "description"
+    "address" ;
+    
+}
+
+.discover-card figure {
+    margin: 0;
+    grid-area: image;
+}
+
+.discover-card img {
+    width: 100%;
+    min-width: 250px;
+}
+
+.discover-card h2 {
+    margin: 10px;
+    text-align: center;
+    grid-area: title;
+}
+
+.discover-card address {
+    grid-area: address;
+    padding: 0 10px 10px 10px;
+    text-align: center;
+}
+
+.discover-card p {
+    grid-area: description;
+    padding: 0 10px 10px 10px;
+    text-align: center;
+}
+
+.discover-card button {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 150px;
+    justify-self: center;
+    
+}
+
+.discover-card button:hover {
+    cursor: pointer;
+    background-color: darkgrey;
+    color: white;
+}
+
