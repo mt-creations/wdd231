@@ -10,11 +10,18 @@
     --tertiary-color: #FAF3E0;
     --highlight-color: #D4A373;
     --dark-highlight-color: #4A3F35;
+    --special-color: #d2f5e2;
 }
 
 .ibm-plex-serif-regular {
     font-family: "IBM Plex Serif", serif;
     font-weight: 400;
+    font-style: normal;
+}
+
+.ibm-plex-serif-regular {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
     font-style: normal;
 }
   
@@ -29,21 +36,39 @@
 
 header {
     background-color: var(--primary-color);
-    
+
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 60px 3fr 60px;
+    border-bottom: 1px solid var(--dark-highlight-color);
+    
+}
+
+header img {
+    display: block;
+    max-width: 50px;
+    margin: 10px;
+    padding-left: 10px;
+    align-self: center;
+    justify-self: center;
+    
     
 }
 
 header h1 {
     text-align: center;
+    padding: 0 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
+}
+
+.small-word {
+    font-size: 1.2rem;
 }
 
 .hamburger {
     background: none;
     border: none;
     font-size: 3rem;
-    color: var(--dark-highlight-color);
     cursor: pointer;
     display: flex;
     justify-content: right;
@@ -62,14 +87,15 @@ header h1 {
 
 
 nav a:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--special-color);
+    font-size: 1.5rem;
 }
 
-.navigation li.current a:hover {
+/* .navigation li.current a:hover {
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    text-decoration-color: var(--secondary-color);
-}
+    text-decoration-color: var();
+} */
 
 .navigation {
     display: none;
@@ -80,11 +106,13 @@ nav a:hover {
     display: block;
     background-color: var(--tertiary-color);
     margin-top: 10px;
+    border-top: 2px solid var(--secondary-color);
 }
 
 .navigation li.current a{
     font-weight: 700 ;
-    background-color: var(--secondary-color);
+    text-decoration: underline;
+    
 }
 
 .navigation ul {
@@ -97,9 +125,9 @@ nav a:hover {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: var(--secondary-color);
-    border-bottom: solid 1px var(--primary-color);
-    font-size: 1rem;
+    color: var(--text-color);
+    border-bottom: solid 1px var(--secondary-color);
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -145,22 +173,37 @@ footer {
 /************* HOME ******************/
 
 .intro {
-    background-color: #95D5B2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 1rem 1rem 1rem;
+    background-color: var(--tertiary-color);
+    display: block;
+    text-align: center;
+    margin: 1rem;
     padding: 15px;
-    border: 2px solid #4A3F35;
+    border: 1px solid var(--dark-highlight-color);
+    border-radius: 10px;
+}
+
+.intro h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.intro p {
+    font-size: 1.1rem;
+}
+
+.intro-border {
+    background-color: var(--primary-color);
+    margin: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color);
 }
 
 .allergens {
-    background-color: #FAF3E0;
+    background-color: var(--primary-color);
     display: block;
-    margin: 0 1rem 1rem 1rem;
-    padding: 15px;
-    border: 2px solid #4A3F35;
-    
+    margin: 1rem;
+    padding: 5px 15px;
+    border: 1px solid var(--dark-highlight-color);
+    border-radius: 10px;
 }
 
 .allergen-card {
@@ -169,16 +212,19 @@ footer {
     text-align: center;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid var(--highlight-color);
+    border: 1px solid var(--secondary-color);
+    background-color: var(--tertiary-color);
     border-radius: 10px;
+    box-shadow:  0 0 10px rgba(0, 0, 0, .2)
 }
 
 .allergen-card figcaption {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .allergen-card:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
     border-radius: 10px;
 }
 

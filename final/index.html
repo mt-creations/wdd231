@@ -29,12 +29,12 @@
 
 <body>
     <header>
-        <img src="#" alt="#">
-        <h1><span>Allergies for Everyone</span></h1>
+        <img src="images/hands-icon.svg" alt="holding hands icon">
+        <h1><span>Allergies <span class="small-word">for</span> Everyone</span></h1>
         <button class="hamburger" id="ham-btn"  aria-label="navigation menu"></button>
         <nav class="navigation" id="nav-bar">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li class="current"><a href="#">Home</a></li>
                 <li><a href="#">Kitchen</a></li>
                 <li><a href="#">Support</a></li>
             </ul>
@@ -42,62 +42,81 @@
     </header>
 
     <main>
-        <div class="intro">
-            <h2>introduction</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae officia repellat est neque ducimus tempore sequi? Corrupti, quia consectetur inventore iste eos, illum cupiditate quam illo ad eum impedit esse aliquam iure tempore quis voluptatum veritatis suscipit, eaque facilis tempora at? Iure facilis molestias laudantium a rerum perspiciatis, et mollitia tenetur similique! At error tempora, cupiditate perferendis a adipisci similique fuga commodi laudantium optio est veniam consectetur. Nam expedita consequatur </p>
-        </div>
+        <section class="intro-border">
+            <div class="intro">
+                <h2>Welcome!</h2>
+                <p>
+                    Here at Allergies for Everyone we know that life can be hard for people suffering with food allergies.  Whether you are the parent of a child with a deadly allergy, have an allergy yourself, or just want to become more informed on the most common food allergies, you are welcome here!
+                </p>
+                <p>🥜</p>
+                <p>
+                    To explore information on the top six most common food allergies click on one of the images below.
+                </p>
+                <p>🥜</p>
+                <p>
+                    To discover helpful <a href="#">kitchen</a> tips and find allergy friendly shops click on our kitchen page.
+                </p>
+                <p>🥜</p>
+                <p>
+                    If you are looking to find people who understand what you are dealing with click on our <a href="#">support</a> page.
+                </p>               
+            </div>
+        </section>
 
         <div class="allergens">
-            <div class="allergen-card">
-                <figure data-modal="peanuts">
+            <div class="allergen-card" data-modal="peanuts">
+                <figure>
                     <img src="images/peanuts-150.webp" alt="Peanuts" loading="lazy">
                     <figcaption>Peanuts</figcaption>
                 </figure>
             </div>
 
-            <div class="allergen-card">
-                <figure data-modal="tree-nuts">
+            <div class="allergen-card" data-modal="tree-nuts">
+                <figure>
                     <img src="images/treenuts-150.webp" alt="Tree Nuts" loading="lazy">
                     <figcaption>Tree Nuts</figcaption>
                 </figure>
             </div>
 
-            <div class="allergen-card">
-                <figure data-modal="milk">
+            <div class="allergen-card" data-modal="milk">
+                <figure>
                     <img src="images/milk-150.webp" alt="Milk" loading="lazy">
                     <figcaption>Milk</figcaption>
                 </figure>
             </div>
 
-            <div class="allergen-card">
-                <figure data-modal="eggs">
+            <div class="allergen-card" data-modal="eggs">
+                <figure>
                     <img src="images/eggs-150.webp" alt="Eggs" loading="lazy">
                     <figcaption>Eggs</figcaption>
                 </figure>
             </div>
 
-            <div class="allergen-card">
-                <figure data-modal="wheat">
+            <div class="allergen-card" data-modal="wheat">
+                <figure>
                     <img src="images/wheat-150.webp" alt="Wheat" loading="lazy">
                     <figcaption>Wheat</figcaption>
                 </figure>
             </div>
 
-            <div class="allergen-card">
+            <div class="allergen-card" data-modal="soy">
                 <figure data-modal="soy">
                     <img src="images/soy-150.webp" alt="Soy" loading="lazy">
                     <figcaption>Soy</figcaption>
                 </figure>
             </div>
             
-            
+            <dialog id="peanuts">
+                <p>hello</p>
+                <p>100</p>
+                <button data-close="peanuts">Close</button>
+            </dialog>
 
-            <dialog></dialog>
-            <dialog></dialog>
-            <dialog></dialog>
-            <dialog></dialog>
-            <dialog></dialog>
-            <dialog></dialog>
+            <dialog id="tree-nuts"></dialog>
+            <dialog id="milk"></dialog>
+            <dialog id="eggs"></dialog>
+            <dialog id="wheat"></dialog>
+            <dialog id="soy"></dialog>
 
         </div>
 

@@ -1,14 +1,12 @@
-const cards = document.querySelectorAll('.allergen-card');
+document.addEventListener('click', (x) => {
 
-cards.forEach(card => {
-    card.addEventListener('click', () => {
-        const modalId = card.dataset.modal;
-        document.getElementById(modalId).showModal();
-    });
-});
+    const card = x.target.closest('.allergen-card');
+    if (card) {
+        document.getElementById(card.dataset.modal).showModal();
+    }
 
-document.querySelectorAll('.close').forEach(button => {
-    button.addEventListener('click', () => {
-        button.closest('dialog').close();
-    });
+    const closeBtn = x.target.closest('[data-close]');
+    if (closeBtn) {
+        closeBtn.closest('dialog').close();
+    }
 });
