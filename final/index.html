@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Final Project Food Allergy Website | WDD 231</title>
+    <meta name="author" content="Michael Thomas">
+    <meta name="description" content="Final project for wdd231 web development class.  Homepage for a website about food allergies.">
+
+    <link rel="icon" href="images/final-favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Food allergy information website">
+    <meta property="og:description" content="Michael Thomas's final project for the wdd231 web development class. A food allergy information website.">
+    <meta property="og:url" content="#">
+    <meta property="og:image" content="#">
+
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="#" alt="#">
+        <h1><span>Allergies for Everyone</span></h1>
+        <button class="hamburger" id="ham-btn"  aria-label="navigation menu"></button>
+        <nav class="navigation" id="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Kitchen</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro">
+            <h2>introduction</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae officia repellat est neque ducimus tempore sequi? Corrupti, quia consectetur inventore iste eos, illum cupiditate quam illo ad eum impedit esse aliquam iure tempore quis voluptatum veritatis suscipit, eaque facilis tempora at? Iure facilis molestias laudantium a rerum perspiciatis, et mollitia tenetur similique! At error tempora, cupiditate perferendis a adipisci similique fuga commodi laudantium optio est veniam consectetur. Nam expedita consequatur </p>
+        </div>
+
+        <div class="allergens">
+            <div class="allergen-card">
+                <figure data-modal="peanuts">
+                    <img src="images/peanuts-150.webp" alt="Peanuts" loading="lazy">
+                    <figcaption>Peanuts</figcaption>
+                </figure>
+            </div>
+
+            <div class="allergen-card">
+                <figure data-modal="tree-nuts">
+                    <img src="images/treenuts-150.webp" alt="Tree Nuts" loading="lazy">
+                    <figcaption>Tree Nuts</figcaption>
+                </figure>
+            </div>
+
+            <div class="allergen-card">
+                <figure data-modal="milk">
+                    <img src="images/milk-150.webp" alt="Milk" loading="lazy">
+                    <figcaption>Milk</figcaption>
+                </figure>
+            </div>
+
+            <div class="allergen-card">
+                <figure data-modal="eggs">
+                    <img src="images/eggs-150.webp" alt="Eggs" loading="lazy">
+                    <figcaption>Eggs</figcaption>
+                </figure>
+            </div>
+
+            <div class="allergen-card">
+                <figure data-modal="wheat">
+                    <img src="images/wheat-150.webp" alt="Wheat" loading="lazy">
+                    <figcaption>Wheat</figcaption>
+                </figure>
+            </div>
+
+            <div class="allergen-card">
+                <figure data-modal="soy">
+                    <img src="images/soy-150.webp" alt="Soy" loading="lazy">
+                    <figcaption>Soy</figcaption>
+                </figure>
+            </div>
+            
+            
+
+            <dialog></dialog>
+            <dialog></dialog>
+            <dialog></dialog>
+            <dialog></dialog>
+            <dialog></dialog>
+            <dialog></dialog>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <!-- FOOTER WILL HAVE THE MOST OF THE STANDARD ELEMENTS FOR THIS CLASS WITH THE ADDITION OF AN ATTRIBUTE LINK FOR CITING SOURCES -->
+
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://github.com/mt-creations/wdd231" target="_blank"><img src="images/github-icon.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin-icon.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.svg" alt="instagram" width="16" height="16"></a>
+        </div>
+
+        <div class="student-info">
+            <p><span id="currentYear"></span></p>
+            <p id="lastModified"></p>
+        </div> 
+    </footer>
+
+</body>

@@ -42,11 +42,12 @@ header h1 {
 .hamburger {
     background: none;
     border: none;
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--dark-highlight-color);
     cursor: pointer;
     display: flex;
     justify-content: right;
+    align-items: center;
 }
 
 .hamburger::before {
@@ -155,13 +156,33 @@ footer {
 
 .allergens {
     background-color: #FAF3E0;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
     margin: 0 1rem 1rem 1rem;
     padding: 15px;
     border: 2px solid #4A3F35;
     
 }
 
+.allergen-card {
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--highlight-color);
+    border-radius: 10px;
+}
 
+.allergen-card figcaption {
+    font-size: 2rem;
+}
+
+.allergen-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+
+.allergen-card img {
+    border-radius: 100px;
+    box-shadow:  0 0 10px rgba(0, 0, 0, .5);
+}
