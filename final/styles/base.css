@@ -55,11 +55,16 @@ header img {
     
 }
 
-header h1 {
+header .words {
     text-align: center;
+    font-size: 2rem;
     padding: 0 15px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     
+}
+
+h1 {   
+    display: none;
 }
 
 .small-word {
