@@ -231,3 +231,20 @@ footer {
     border-radius: 100px;
     box-shadow:  0 0 10px rgba(0, 0, 0, .5);
 }
+
+dialog {
+    padding: 2rem;
+    
+    text-align: center;
+    background-color: var(--tertiary-color);
+}
+
+dialog img {
+    border: 1px solid var(--secondary-color);
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}

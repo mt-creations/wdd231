@@ -11,9 +11,9 @@
     }
 
     .navigation {
-        display: block;
-        grid-column: 3/4;
-        text-align: center;
+        display:flex;
+        justify-content: end;
+        grid-area: menu;
     }
 
     .navigation li:last-child a {
@@ -25,11 +25,17 @@
         justify-content: center;
         align-items: center;
         font-size: 3rem;
+        grid-area: title;
     }
 
     header {
         padding-right: 1rem;
+        grid-template-areas: 
+        "image title menu" ;
     }
 
+    header img {
+        grid-area: image ;
+    }
 
 }

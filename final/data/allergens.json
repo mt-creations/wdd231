@@ -1,0 +1,45 @@
+
+[
+    {
+        "id": "peanuts",
+        "name": "Peanuts",
+        "image": "images/peanuts-150.webp",
+        "affected": "Approximately 6 million people in the United States",
+        "description": "Peanut allergy is one of the most common and serious food allergies. Reactions can range from mild symptoms such as itching, hives, and stomach discomfort to severe symptoms including swelling of the throat, difficulty breathing, and anaphylaxis. Because even small amounts of peanut protein can trigger a reaction in sensitive individuals, careful avoidance is important."
+    },
+    {
+        "id": "tree-nuts",
+        "name": "Tree Nuts",
+        "image": "images/treenuts-150.webp",
+        "affected": "Approximately 4 million people in the United States",
+        "description": "Tree nut allergies include allergies to foods such as almonds, walnuts, pecans, cashews, pistachios, and hazelnuts. Reactions may begin with itching, hives, or digestive discomfort and can progress to swelling, breathing difficulties, and anaphylaxis. Many people with tree nut allergies must avoid multiple types of nuts due to the risk of cross-contact."
+    },
+    {
+        "id": "milk",
+        "name": "Milk",
+        "image": "images/milk-150.webp",
+        "affected": "Approximately 2 to 3 million people in the United States",
+        "description": "Milk allergy occurs when the immune system reacts to proteins found in cow's milk. Symptoms often include hives, wheezing, vomiting, stomach pain, or diarrhea. In more severe cases, milk allergy can cause swelling of the airways and anaphylaxis. It is especially common among young children, though some individuals continue to have the allergy into adulthood."
+    },
+    {
+        "id": "eggs",
+        "name": "Eggs",
+        "image": "images/eggs-150.webp",
+        "affected": "Approximately 1.5 to 2 million people in the United States",
+        "description": "Egg allergy is one of the most common food allergies in children. Mild reactions may include skin rashes, hives, nasal congestion, or digestive problems. More severe reactions can involve breathing difficulties, significant swelling, and anaphylaxis. Some individuals outgrow egg allergies over time, while others remain allergic throughout life."
+    },
+    {
+        "id": "wheat",
+        "name": "Wheat",
+        "image": "images/wheat-150.webp",
+        "affected": "Approximately 2 million people in the United States",
+        "description": "A wheat allergy occurs when the immune system reacts to proteins found in wheat. Symptoms can include hives, itching, nasal congestion, nausea, vomiting, and abdominal pain. Severe reactions may involve difficulty breathing or anaphylaxis. Wheat allergy is different from celiac disease, which is an autoimmune condition rather than a food allergy."
+    },
+    {
+        "id": "soy",
+        "name": "Soy",
+        "image": "images/soy-150.webp",
+        "affected": "Approximately 1 million people in the United States",
+        "description": "Soy allergy is most commonly diagnosed during childhood. Mild reactions may cause itching, hives, stomach discomfort, or swelling around the mouth. More serious reactions can include wheezing, breathing difficulties, and anaphylaxis. Soy is found in many processed foods, making label reading an important part of allergy management."
+    }
+]
