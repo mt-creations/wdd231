@@ -13,6 +13,13 @@ document.addEventListener('click', (x) => {
     }
 });
 
+document.addEventListener('click', (x) => {
+    const dialog = x.target;
+
+    if (dialog.tagName === 'DIALOG') {
+        dialog.close();
+    }
+});
 
 // dialog creation
 
@@ -42,4 +49,10 @@ async function loadDialogs() {
     });
 }
 
+
 loadDialogs();
+
+document.getElementById('sources-link').addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById('sources-dialog').showModal();
+});
