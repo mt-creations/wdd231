@@ -47,5 +47,8 @@
         grid-area: image ;
     }
 
+    header p span  {
+        font-size: 3rem;
+    }
     
 }
