@@ -13,7 +13,7 @@
     .navigation {
         display:flex;
         justify-content: end;
-        grid-area: menu;
+        grid-area: nav;
 
     }
 
@@ -32,7 +32,7 @@
     header {
         padding-right: 1rem;
         grid-template-areas: 
-        "image title menu" ;
+        "image title nav" ;
     }
 
     header img {
