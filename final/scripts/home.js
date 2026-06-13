@@ -1,4 +1,9 @@
-// modal open/close
+
+// home.js
+
+import { loadDialogs } from './dialog.js';
+
+loadDialogs();
 
 document.addEventListener('click', (x) => {
 
@@ -21,36 +26,6 @@ document.addEventListener('click', (x) => {
     }
 });
 
-// dialog creation
-
-async function loadDialogs() {
-    const response = await fetch("data/allergens.json");
-    const allergens = await response.json();
-
-    const container = document.getElementById('dialog-container');
-
-    allergens.forEach(allergen => {
-        container.insertAdjacentHTML("beforeend",
-            `<dialog id="${allergen.id}">
-
-            <img src="${allergen.image}" alt="${allergen.name}">
-                <h2>${allergen.name}</h2>
-
-                <p>
-                    <strong>Estimated affected:</strong>
-                    ${allergen.affected}
-                </p>
-
-                <p>${allergen.description}</p>
-
-                <button data-close>Close</button>
-            </dialog>`
-        );
-    });
-}
-
-
-loadDialogs();
 
 document.getElementById('sources-link').addEventListener('click', (e) => {
     e.preventDefault();
