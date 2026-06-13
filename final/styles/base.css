@@ -64,7 +64,8 @@ header .words {
 }
 
 h1 {   
-    display: none;
+    display: flex;
+    justify-content: center;
 }
 
 .small-word {
@@ -261,4 +262,33 @@ dialog img {
 
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+/************* KITCHEN ******************/
+
+.k-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.kitchen-btn {
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+}
+
+.kitchen-btn:hover {
+    cursor: pointer;
+}
+
+.kitchen-btn p {
+    margin: 5px 0 ;
+}
+
+.kitchen-btn img {
+    margin-top: 5px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
 }
